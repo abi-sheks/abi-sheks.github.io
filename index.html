@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="output.css">
+    <title>Document</title>
+</head>
+
+<body class="bg-gray-300">
+    <div class="navbar flex flex-row w-full bg-black p-8 justify-between align-center static">
+        <div class="typeout">
+            <p class="text-3xl mr-8 h-full font-mono text-white">Welcome</p>
+        </div>
+        <nav class="flex flex-row justify-around align-center text-md w-4/12 h-full">
+            <a href="#about">
+                <p class="h-full bg-white p-4 rounded-lg cursor-pointer hover:bg-yellow-500 hover:text-white">
+                    About me
+                </p>
+            </a>
+            <a href="#projects">
+                <p class="h-full bg-white p-4 rounded-lg cursor-pointer hover:bg-yellow-500 hover:text-white">
+                    Projects
+                </p>
+            </a>
+            <a href="#contacts">
+                <p class="h-full bg-white p-4 rounded-lg cursor-pointer hover:bg-yellow-500 hover:text-white">
+                    Contact
+                </p>
+            </a>
+        </nav>
+    </div>
+    <div class="scroll-container scroll-smooth">
+        <div id="about" class="about w-full flex flex-row">
+            <div class="text flex h-full flex-col justify-around p-8 align-center">
+                <h1 class="text-center text-3xl mb-8 mt-8 font-bold font-mono">Hey, Abishek here.</h1>
+                <p class="text-xl mb-8 mt-8">I'm an undergraduate student at IIT Roorkee. Lover of all things dev, huge
+                    fan of watching things come to life (no matter how frustrating building them might be :P). Currently
+                    dipping my toes in graphics programming, blockchain development, and web development. Huge MMA and
+                    hip hop fan, hit me up anytime to discuss a fight or an album :) . Oh, did I mention I love seinen?
+                </p>
+            </div>
+            <div class="image p-8">
+                <img src="assets/guts.jpg" alt="Photo of guts" class="rounded-lg">
+            </div>
+        </div>
+        <div id="projects" class="container projects flex flex-col mt-4 p-8">
+            <p class="text-3xl mb-6 font-mono">a few of my projects</p>
+            <div class="grid grid-cols-2 gap-10 auto-rows-fr">
+                <div class="project flex flex-col align-center justify-between mt-4 mb-4 bg-black p-8 rounded-2xl">
+                    <div class="text-section">
+                        <a class="block" href="https://github.com/berserkenthusiastabishek/docify-backend">
+                            <p class="text-xl text-center text-white mb-2 font-bold">
+                                Docify
+                            </p>
+                            <p class="text-white">Docify is a collaborative document editing and sharing web app. Users
+                                can create and collabaratively edit and share documents. Tags provide a way for you and
+                                your
+                                collaborators to safely group and work on documents. The backend is written in Django,
+                                while
+                                the frontend is made in React-Redux using Material Design principles.</p>
+                        </a>
+                    </div>
+                    <div class="arrow-block flex flex-row justify-end">
+                        <a href="https://github.com/berserkenthusiastabishek/docify-backend">
+                            <img class="invert arrow" src="assets/arrow.png" alt="arrow">
+                        </a>
+                    </div>
+                </div>
+                <div class="project flex flex-col align-center justify-between mt-4 mb-4 bg-black p-8 rounded-2xl">
+                    <div class="text-section">
+                        <a class="block" href="https://github.com/berserkenthusiastabishek/docify-backend">
+                            <p class="text-xl text-center text-white mb-2 font-bold">
+                                Desprite
+                            </p>
+                            <p class="text-white">DeSprite is a proof of concept/MVP for a decentralised game assets
+                                marketplace where users are free to list their game assets by minting them as an NFT and
+                                listing them on the marketplace. The system works by storing the asset files on the IPFS
+                                network, and returning the cid of the asset pack to use as an NFT token uri. Purchase of
+                                the
+                                token gives the buyer access to the cid so they can retrieve their files accordingly. It
+                                aims to solve the problem of content piracy commonly seen in game asset marketplaces.
+                                The
+                                contracts are written in Solidity and tested and deployed with the Foundry framework,
+                                and
+                                the frontend uses Chakra UI and React.</p>
+                        </a>
+                    </div>
+                    <div class="arrow-block flex flex-row justify-end">
+                        <a href="https://github.com/berserkenthusiastabishek/docify-backend">
+                            <img class="invert arrow" src="assets/arrow.png" alt="arrow">
+                        </a>
+                    </div>
+                </div>
+                <div class="project flex flex-col align-center justify-between mt-4 mb-4 bg-black p-8 rounded-2xl">
+                    <div class="text-section">
+                        <a class="block" href="https://github.com/berserkenthusiastabishek/docify-backend">
+                            <p class="text-xl text-center text-white mb-2 font-bold">
+                                rtools
+                            </p>
+                            <p class="text-white">Rtools is a command line tool suite written in Rust. Contains basic
+                                rust
+                                implementations of common tools like grep, find, and gzip, and a command line text
+                                editor
+                                akin to nano. A version control system and file sharing tool are also in the works.</p>
+                        </a>
+                    </div>
+                    <div class="arrow-block flex flex-row justify-end">
+                        <a href="https://github.com/berserkenthusiastabishek/docify-backend">
+                            <img class="invert arrow" src="assets/arrow.png" alt="arrow">
+                        </a>
+                    </div>
+                </div>
+                <div class="project flex flex-col align-center justify-between mt-4 mb-4 bg-black p-8 rounded-2xl">
+                    <div class="text-section">
+                        <a class="block" href="https://github.com/berserkenthusiastabishek/docify-backend">
+                            <p class="text-xl text-center text-white mb-2 font-bold">
+                                Aerial Assault
+                            </p>
+                            <p class="text-white">A 2D bullet-hell (minus the bullets) game written in vanilla
+                                Javascript.
+                                The game is an endless space shooter (think Djimmi the Great level from Cuphead, though
+                                not
+                                as hard) where the player can collect numerous powerups and shoot down enemy rockets.
+                                Written entirely in vanilla javascript, leveraging HTML Canvas to do most of the dirty
+                                work.</p>
+                        </a>
+                    </div>
+                    <div class="arrow-block flex flex-row justify-end">
+                        <a href="https://github.com/berserkenthusiastabishek/docify-backend">
+                            <img class="invert arrow" src="assets/arrow.png" alt="arrow">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="contacts" class="container contacts flex flex-row p-8 w-full justify-around">
+            <p class="text-3xl font-mono">reach out</p>
+            <div class="flex flex-row justify-around w-full mt-8">
+                <a href="https://github.com/berserkenthusiastabishek">
+                    <div class="info-link flex flex-col align-center">
+                        <img class="social invert" src="assets/github.svg" alt="Github">
+                        <p class="text-md mt-4 text-white font-bold">Find my code here.</p>
+                    </div>
+                </a>
+                <a href="https://github.com/berserkenthusiastabishek">
+                    <div class="info-link flex flex-col align-center">
+                        <img class="social" src="assets/insta.svg" alt="Github">
+                        <p class="text-md mt-4 text-white font-bold">Shitposting. Thats it.</p>
+                    </div>
+                </a>
+                <a href="https://github.com/berserkenthusiastabishek">
+                    <div class="info-link flex flex-col align-center">
+                        <img class="social" src="assets/linkedin.svg" alt="Github">
+                        <p class="text-md mt-4 text-white font-bold">Strictly professional.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

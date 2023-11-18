@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html {scroll-behavior: smooth;}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project:hover {
+    cursor: pointer;
+    transform: scale(1.01);
+    transition: transform 1s;
+}
+
+.info-link {
+    background-color: black;
+    padding : 2rem;
+    border-radius: 1rem;
+}
+
+.info-link:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: transform 1s;
+}
+
+.scroll-container {
+    scroll-behavior: smooth;
+}
+
+
+.social {
+    /*bad fix god i hate css*/
+    position: relative;
+    left : 2.2rem;
+    width : 4rem;
+    height : 4rem;
+}
+
+.arrow {
+    width : 2rem;
+    height : 2rem;
+}
+
+.typeout p {
+    overflow: hidden; 
+    border-right: .15em solid black; 
+    white-space: nowrap; 
+    margin: 0 auto; 
+    animation: 
+      typing 2s steps(40, end),
+      blink-caret 0.75s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: black; }
+  }
