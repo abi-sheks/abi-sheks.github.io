@@ -11,10 +11,18 @@ html {scroll-behavior: smooth;}
     align-items: center;
 }
 
+.nav-btn:hover {
+    background-color: rgb(52 211 153);
+    transform: scale(1.05);
+    color: black;
+    transition : background-color 1s, color 1s, transform 1s;
+}
+
 .project:hover {
     cursor: pointer;
     transform: scale(1.01);
-    transition: transform 1s;
+    background-color: rgb(11, 12, 31);
+    transition: transform 2s, background-color 2s;
 }
 
 .info-link {
@@ -36,8 +44,6 @@ html {scroll-behavior: smooth;}
 
 .social {
     /*bad fix god i hate css*/
-    position: relative;
-    left : 2.2rem;
     width : 4rem;
     height : 4rem;
 }

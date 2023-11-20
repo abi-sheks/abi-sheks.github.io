@@ -5,27 +5,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="input.css">
     <title>Document</title>
 </head>
 
-<body class="bg-gray-300">
+<body class="bg-slate-900">
     <div class="navbar flex flex-row w-full bg-black p-8 justify-between align-center static">
         <div class="typeout">
-            <p class="text-3xl mr-8 h-full font-mono text-white">Welcome</p>
+            <p class="text-3xl mr-8 h-full font-mono text-lime-500">Welcome</p>
         </div>
         <nav class="flex flex-row justify-around align-center text-md w-4/12 h-full">
             <a href="#about">
-                <p class="h-full bg-white p-4 rounded-lg cursor-pointer hover:bg-yellow-500 hover:text-white">
+                <p class="h-full text-white bg-emerald-600 font-mono p-4 rounded-lg cursor-pointer nav-btn">
                     About me
                 </p>
             </a>
             <a href="#projects">
-                <p class="h-full bg-white p-4 rounded-lg cursor-pointer hover:bg-yellow-500 hover:text-white">
+                <p class="h-full text-white bg-emerald-600 font-mono p-4 rounded-lg cursor-pointer nav-btn">
                     Projects
                 </p>
             </a>
             <a href="#contacts">
-                <p class="h-full bg-white p-4 rounded-lg cursor-pointer hover:bg-yellow-500 hover:text-white">
+                <p class="h-full text-white bg-emerald-600 font-mono p-4 rounded-lg cursor-pointer nav-btn">
                     Contact
                 </p>
             </a>
@@ -34,8 +35,9 @@
     <div class="scroll-container scroll-smooth">
         <div id="about" class="about w-full flex flex-row">
             <div class="text flex h-full flex-col justify-around p-8 align-center">
-                <h1 class="text-center text-3xl mb-8 mt-8 font-bold font-mono">Hey, Abishek here.</h1>
-                <p class="text-xl mb-8 mt-8">I'm an undergraduate student at IIT Roorkee. Lover of all things dev, huge
+                <h1 class="text-center text-3xl mb-8 mt-8 font-bold font-mono text-lime-500">Hey, Abishek here.</h1>
+                <p class="text-xl mb-8 mt-8 text-white">I'm an undergraduate student at IIT Roorkee. Lover of all things
+                    dev, huge
                     fan of watching things come to life (no matter how frustrating building them might be :P). Currently
                     dipping my toes in graphics programming, blockchain development, and web development. Huge MMA and
                     hip hop fan, hit me up anytime to discuss a fight or an album :) . Oh, did I mention I love seinen?
@@ -46,12 +48,12 @@
             </div>
         </div>
         <div id="projects" class="container projects flex flex-col mt-4 p-8">
-            <p class="text-3xl mb-6 font-mono">a few of my projects</p>
+            <p class="text-3xl mb-6 font-mono text-lime-500">a few of my projects</p>
             <div class="grid grid-cols-2 gap-10 auto-rows-fr">
                 <div class="project flex flex-col align-center justify-between mt-4 mb-4 bg-black p-8 rounded-2xl">
                     <div class="text-section">
                         <a class="block" href="https://github.com/berserkenthusiastabishek/docify-backend">
-                            <p class="text-xl text-center text-white mb-2 font-bold">
+                            <p class="text-xl text-center mb-2 font-bold text-emerald-300">
                                 Docify
                             </p>
                             <p class="text-white">Docify is a collaborative document editing and sharing web app. Users
@@ -71,7 +73,7 @@
                 <div class="project flex flex-col align-center justify-between mt-4 mb-4 bg-black p-8 rounded-2xl">
                     <div class="text-section">
                         <a class="block" href="https://github.com/berserkenthusiastabishek/docify-backend">
-                            <p class="text-xl text-center text-white mb-2 font-bold">
+                            <p class="text-xl text-center text-emerald-300 mb-2 font-bold ">
                                 Desprite
                             </p>
                             <p class="text-white">DeSprite is a proof of concept/MVP for a decentralised game assets
@@ -96,7 +98,7 @@
                 <div class="project flex flex-col align-center justify-between mt-4 mb-4 bg-black p-8 rounded-2xl">
                     <div class="text-section">
                         <a class="block" href="https://github.com/berserkenthusiastabishek/docify-backend">
-                            <p class="text-xl text-center text-white mb-2 font-bold">
+                            <p class="text-xl text-center mb-2 font-bold text-emerald-300">
                                 rtools
                             </p>
                             <p class="text-white">Rtools is a command line tool suite written in Rust. Contains basic
@@ -115,7 +117,7 @@
                 <div class="project flex flex-col align-center justify-between mt-4 mb-4 bg-black p-8 rounded-2xl">
                     <div class="text-section">
                         <a class="block" href="https://github.com/berserkenthusiastabishek/docify-backend">
-                            <p class="text-xl text-center text-white mb-2 font-bold">
+                            <p class="text-xl text-center text-white mb-2 font-bold text-emerald-300">
                                 Aerial Assault
                             </p>
                             <p class="text-white">A 2D bullet-hell (minus the bullets) game written in vanilla
@@ -136,24 +138,30 @@
             </div>
         </div>
         <div id="contacts" class="container contacts flex flex-row p-8 w-full justify-around">
-            <p class="text-3xl font-mono">reach out</p>
+            <p class="text-3xl font-mono text-lime-500">reach out</p>
             <div class="flex flex-row justify-around w-full mt-8">
                 <a href="https://github.com/berserkenthusiastabishek">
                     <div class="info-link flex flex-col align-center">
-                        <img class="social invert" src="assets/github.svg" alt="Github">
-                        <p class="text-md mt-4 text-white font-bold">Find my code here.</p>
+                        <div class="flex flex-row justify-center">
+                            <img class="social invert" src="assets/github.svg" alt="Github">
+                        </div>
+                        <p class="text-md mt-4 text-white font-bold font-mono">Code :D </p>
                     </div>
                 </a>
                 <a href="https://github.com/berserkenthusiastabishek">
                     <div class="info-link flex flex-col align-center">
-                        <img class="social" src="assets/insta.svg" alt="Github">
-                        <p class="text-md mt-4 text-white font-bold">Shitposting. Thats it.</p>
+                        <div class="flex flex-row justify-center">
+                            <img class="social" src="assets/insta.svg" alt="Instagram">
+                        </div>
+                        <p class="text-md mt-4 text-white font-bold font-mono">Shitposting.</p>
                     </div>
                 </a>
                 <a href="https://github.com/berserkenthusiastabishek">
                     <div class="info-link flex flex-col align-center">
-                        <img class="social" src="assets/linkedin.svg" alt="Github">
-                        <p class="text-md mt-4 text-white font-bold">Strictly professional.</p>
+                        <div class="flex flex-row justify-center">
+                            <img class="social" src="assets/linkedin.svg" alt="Linkedin">
+                        </div>
+                        <p class="text-md mt-4 text-white font-bold font-mono">Strictly professional.</p>
                     </div>
                 </a>
             </div>
