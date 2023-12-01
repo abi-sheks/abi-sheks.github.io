@@ -11,6 +11,9 @@ html {scroll-behavior: smooth;}
     align-items: center;
 }
 
+.resp-image {
+
+}
 .nav-btn:hover {
     background-color: rgb(52 211 153);
     transform: scale(1.05);
@@ -44,8 +47,11 @@ html {scroll-behavior: smooth;}
 
 .social {
     /*bad fix god i hate css*/
-    width : 4rem;
     height : 4rem;
+}
+
+.social-container {
+    width: 8rem;
 }
 
 .arrow {
